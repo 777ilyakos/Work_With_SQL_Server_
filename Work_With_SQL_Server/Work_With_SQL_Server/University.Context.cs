@@ -24,7 +24,15 @@ namespace Work_With_SQL_Server
         {
             throw new UnintentionalCodeFirstException();
         }
-    
+        
         public virtual DbSet<Pract_18> Pract_18 { get; set; }
+
+        private static UniversityEntities context;
+        public static UniversityEntities GetContext()
+        {
+            if (context == null)
+                context = new UniversityEntities();
+            return context;
+        }
     }
 }
