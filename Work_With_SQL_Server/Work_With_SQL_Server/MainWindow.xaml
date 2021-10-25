@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Work_With_SQL_Server"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <DataGrid x:Name="DataGrid1" IsReadOnly="True" Margin="20,40,20,100">
+            
+        </DataGrid>
     </Grid>
 </Window>

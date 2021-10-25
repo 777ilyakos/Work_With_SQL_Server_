@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,16 @@ namespace Work_With_SQL_Server
     /// </summary>
     public partial class MainWindow : Window
     {
+        UniversityEntities db = UniversityEntities.GetContext();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            db.Pract_18.Load();
+            DataGrid1.ItemsSource = db.Pract_18.Local.ToBindingList();
         }
     }
 }
