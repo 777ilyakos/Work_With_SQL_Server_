@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Work_With_SQL_Server"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="MainWindow" Loaded="Window_Loaded"
+        Height="450"    Width="800" 
+        MinHeight="450" MinWidth="800">
     <Grid>
         <DataGrid x:Name="DataGrid1" IsReadOnly="True" Margin="20,40,20,100">
             
         </DataGrid>
+        <Button Content="добавить запись" FontSize="16" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,20"/>
+        <Button Content="изменить запись" FontSize="16" Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="190,0,0,20"/>
+        <Button Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="360,0,0,20"/>
+        <Button Width="150" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="530,0,0,20"/>
     </Grid>
 </Window>
