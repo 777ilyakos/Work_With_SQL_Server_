@@ -32,5 +32,11 @@ namespace Work_With_SQL_Server
             //db.Pract_18.Load();
             //DataGrid1.ItemsSource = db.Pract_18.Local.ToBindingList();
         }
+
+        private void СreatingRecord_Click(object sender, RoutedEventArgs e)
+        {
+            FormСreatingRecord form = new FormСreatingRecord();
+            form.ShowDialog();
+        }
     }
 }
