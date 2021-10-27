@@ -29,8 +29,8 @@ namespace Work_With_SQL_Server
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            //db.Pract_18.Load();
-            //DataGrid1.ItemsSource = db.Pract_18.Local.ToBindingList();
+            db.Pract_18.Load();
+            DataGrid1.ItemsSource = db.Pract_18.Local.ToBindingList();
         }
 
         private void СreatingRecord_Click(object sender, RoutedEventArgs e)

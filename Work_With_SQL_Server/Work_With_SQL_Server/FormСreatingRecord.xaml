@@ -7,17 +7,17 @@
         mc:Ignorable="d" ResizeMode="NoResize" Title="FormСreatingRecord" 
         Height="500" Width="400" >
     <Grid>
-        <TextBox x:Name="number" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Height="40" Width="300"/>
-        <TextBox x:Name="name1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,80,0,0" Height="40" Width="300"/>
-        <TextBox x:Name="name2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,140,0,0" Height="40" Width="300"/>
-        <TextBox x:Name="name3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,200,0,0" Height="40" Width="300"/>
+        <TextBox x:Name="number" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Height="40" Width="300" Text="номер зачётки" />
+        <TextBox x:Name="name1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,80,0,0" Height="40" Width="300"  Text="ф"/>
+        <TextBox x:Name="name2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,140,0,0" Height="40" Width="300" Text="и"/>
+        <TextBox x:Name="name3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,200,0,0" Height="40" Width="300" Text="о"/>
         <CheckBox x:Name="live" Content="живёт в общаге" Margin="50,260,127,87"/>
         <CheckBox x:Name="like1" Content="предпочитает предмет №1" Margin="50,280,120,87"/>
         <CheckBox x:Name="like2" Content="предпочитает предмет №2" Margin="50,300,120,87"/>
         <CheckBox x:Name="like3" Content="предпочитает предмет №3" Margin="50,320,120,87"/>
         <CheckBox x:Name="like4" Content="предпочитает предмет №4" Margin="50,340,120,87"/>
         <CheckBox x:Name="like5" Content="предпочитает предмет №5" Margin="50,360,120,87"/>
-        <Button Content="создать" FontSize="18" Height="40" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20,0,0,20"/>
+        <Button Content="создать" FontSize="18" Height="40" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20,0,0,20" Click="Create_Click"/>
         <Button Content="отмена" FontSize="18" Height="40" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="190,0,0,20" Click="Exit_Click"/>
     </Grid>
 </Window>
